@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script>
+      function SumNumbers(event) {
+        var addNumbers = 0;
+        for (var x = 0; x <= 100; x++) {
+          addNumbers = addNumbers + x;
+        }
+        console.log(addNumbers);
+        console.log(event);
+        event.preventDefault();
+      }
+    </script>
+  </head>
+  <body>
+    <h1>Sum the numbers between 1 and 100</h1>
+    <!-- Access the submission event by passing the event keyword on the form within the function -->
+    <form>
+      <button onclick="SumNumbers(event)">Calculate</button>
+    </form>
+  </body>
+</html>
